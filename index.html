@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="sidebar-input"><input type="text" placeholder="Search" class="input-text"> <i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="sidebar-log-sign"><button class="log-sign">Login / Signin</button></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="./Iyappaa_logo.png" alt="" class="brand-logo"></a></li>
+            <li class="hideOnMobile"><a href="#">IYAPPAA FOOD INDUSTRY</a></li>
+            <li class="hideOnMobile"><a href="#">Overview</a></li>
+            <li class="hideOnMobile"><a href="#">All Products</a></li>
+            <li class="hideOnMobile"><a href="#">Categories</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+            <li class="navbar-input"><input type="text" placeholder="Search" class="input-text"> <i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="navbar-log-sign"><button class="log-sign">Login / Signin</button></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav><!--navbar-->
+    <main>
+        <section class="carousel next">
+            <div class="list">
+                <article class="item other_1">
+                    <div class="main-content" 
+                    style="background-color: #9c4d2f;">
+                        <div class="content">
+                            <h2>Tapioca Chips, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./thin chips.jpeg" alt="">
+                        <figcaption>Tapioca Chips, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item active">
+                    <div class="main-content" 
+                    style="background-color: #f5bfaf;">
+                        <div class="content">
+                            <h2>Jackfruit Chips, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./jackfruit Chips.jpg" alt="">
+                        <figcaption>Jackfruit Chips, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item other_2">
+                    <div class="main-content" 
+                    style="background-color: #dedfe1;">
+                        <div class="content">
+                            <h2>Potato Chips, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./chips.jpeg" alt="">
+                        <figcaption>Potato Chips, a new product</figcaption>
+                    </figure>
+                </article>
+                <article class="item">
+                    <div class="main-content" 
+                    style="background-color: #7eb63d;">
+                        <div class="content">
+                            <h2>Orange Candy, a new product</h2>
+                            <p class="price">$ 20</p>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore animi voluptatibus sequi illo, earum molestias explicabo officiis iste neque? Quis quod eligendi fugit, dolore nam itaque modi exercitationem voluptatem corrupti aut aspernatur. Quos non in sed ratione tenetur harum.
+                            </p>
+                            <button class="addToCard">
+                                Add To Card
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="image">
+                        <img src="./orangemittai.jpg" alt="">
+                        <figcaption>Orange Candy, a new product</figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="arrows">
+                <button id="prev">></button>
+                <button id="next">></button>
+            </div>
+        </section>
+     </main> <!--carousel -->
+     <h1 class="offers-discounts">Delightful Discounts</h1>
+     <div class="offers-card">
+         <div class="card">
+             <center><img src="./sweet-offers.jpeg" class="offer-img" alt="Offer 1"></center>
+             <center><img src="./offers ad.png" class="offerad" alt="Offer 1 Ad" style="display: none;"></center>
+             <div class="offer-animate">
+                <button class="offer-animation">20% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer1">00:00:05</div>
+         </div>
+         <div class="card">
+             <center><img src="./snacks-offer.jpeg" class="offer-img" alt="Offer 2"></center>
+             <center><img src="./offers ad.png" class="offerad" alt="Offer 2 Ad" style="display: none;"></center>
+             <div class="offer-animate">
+                <button class="offer-animation">30% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer2">00:00:10</div>
+         </div>
+         <div class="card">
+             <center><img src="./candy-offer.jpeg" class="offer-img" alt="Offer 3"></center>
+             <center><img src="./offers ad.png" class="offerad" alt="Offer 3 Ad" style="display: none;"></center>
+             <div class="offer-animate">
+                <button class="offer-animation">10% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer3">00:00:15</div>
+         </div>
+         <div class="card">
+             <center><img src="./oil-offer.jpeg" alt="offer4" class="offer-img"></center>
+             <center><img src="./offers ad.png" alt="Offer 4 Ad" class="offerad" style="display: none;"></center>
+             <div class="offer-animate">
+                <button class="offer-animation">10% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer4">00:00:20</div>
+         </div>
+         <div class="card">
+             <center><img src="./rice-offer.jpeg" alt="offer5" class="offer-img"></center>
+             <center><img src="./offers ad.png" alt="Offer 5 Ad" class="offerad" style="display: none;"></center>
+             <div class="offer-animate">
+                <button class="offer-animation">20% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer5">00:00:25</div> 
+         </div>
+         <div class="card">
+             <center><img src="./herbal-offer.jpeg" alt="offer6" class="offer-img"></center>
+             <center><img src="./offers ad.png" alt="Offer 6 Ad" class="offerad" style="display: none;"><br></center>
+             <div class="offer-animate">
+                <button class="offer-animation">20% OFF</button>
+             </div>
+             <div class="offer-content">Get 20% off! limited time offer</div>
+             <div class="timer" id="timer6">0:00:10</div>
+         </div>
+     </div><br><br><br><br><!--Offers-->
+     <center>
+        <div class="banner2">
+            <div class="banner2-content"><br><br>
+                <p class="banner2-para1">Crave it!</p>
+                <p class="banner2-para2">Snack it!</p>
+                <p class="banner2-para3">Love it!</p><br><br>
+            </div>
+            <div class="banner2-img">
+                <img src="./aboutus_bg.png" alt="" class="main-bannerimg">
+            </div>
+        </div><br><br><!--Banner2-->
+    </center>
+
+    <h2 class="shop-head">Shop Categories</h2><br><br><br>
+    <div class="categories-list">
+    <div class="main-category1">
+        <div class="category-1">
+            <img src="./sweet-category.png" alt="" class="sweet-category">
+        </div>
+        <p class="head-sweetcategory">Sweets</p>
+    </div>
+    <div class="main-category2">
+        <div class="category-2">
+            <img src="./snack-category.png" alt="" class="snack-category">
+        </div>
+        <p class="head-snackcategory">Snacks</p>
+    </div>
+    <div class="main-category3">
+        <div class="category-3">
+            <img src="./candy-category.png" alt="" class="candy-category">
+        </div>
+        <p class="head-candycategory">Candies</p>
+    </div>
+    <div class="main-category4">
+        <div class="category-4">
+            <img src="./grocery-category.png" alt="" class="grocery-category">
+        </div>
+        <p class="head-grocerycategory">Groceries</p>
+    </div>
+    </div><br><br>
+    <div class="categories-list2">
+        <div class="main-category5">
+            <div class="category-5">
+                <img src="./rice-category.png" alt="" class="rice-category">
+            </div>
+            <p class="head-ricecategory">Rice</p>
+        </div>
+        <div class="main-category6">
+            <div class="category-6">
+                <img src="./oil-category.png" alt="" class="oil-category">
+            </div>
+            <p class="head-oilcategory">Oil</p>
+        </div>
+        <div class="main-category7">
+            <div class="category-7">
+                <img src="./herbal-category.png" alt="" class="herbal-category">
+            </div>
+            <p class="head-herbalcategory">Herbal</p>
+        </div>
+        <div class="main-category8">
+            <div class="category-8">
+                <img src="./homeappliances.png" alt="" class="homeappliance-category">
+            </div>
+            <p class="head-homeappliancecategory">Home Appliances</p>
+        </div>
+    </div><br><br><br><!--shop-category-->
+
+    <h2 class="head-product">Popular Products</h2><br><br>
+<section class="popular-products">
+    <div class="popular-product">
+        <picture>
+            <img src="./murukku.jpg" alt="">
+        </picture>
+        <div class="maindetails">
+        <div class="detail">
+            <p><b>Murukku (Savory)</b><br></p>
+            <samp>$45.00</samp>
+        </div>
+        <div class="button">
+            <p class="star">
+                <strong>&star;</strong>
+                <strong>&star;</strong>
+                <strong>&star;</strong>
+                <strong>&star;</strong>
+                <strong>&star;</strong>
+            </p>
+            <a href="#" class="add-to-cart">Shop Now</a>
+        </div>
+    </div>
+    </div>
+        <div class="popular-product">
+            <picture>
+                <img src="./vellam.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Jaggery</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="./pottu kadalai.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Roasted Gram</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="orangemittai.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Orange Candy</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="whitealluu.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>White Sesame Balls</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="blackallu.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Black Sesame Balls</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Show Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="peanut laddu - Copy.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>peanut Ball</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="./thin chips.jpeg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Thin chips</b><br>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="./jackfruit Chips.jpg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Jackfruit Chips</b><br>
+                    <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a href="#" class="add-to-cart">Shop Now</a>
+            </div>
+        </div>
+        <div class="popular-product">
+            <picture>
+                <img src="chips.jpeg" alt="">
+            </picture>
+            <div class="detail">
+                <p>
+                    <b>Potato chips</b><br>
+                    <small>New arrival</small>
+                </p>
+                <samp>$45.00</samp>
+            </div>
+            <div class="button">
+                <p class="star">
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                    <strong>&star;</strong>
+                </p>
+                <a class="add-to-cart" href="#">Shop Now</a>
+            </div>
+        </div>
+    </section><!--Popular-products-->
+
+    <h2 class="head-about">About Us</h2>
+    <script>
+
+function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display= 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display= 'none';
+        }
+
+        
+        let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let carousel = document.querySelector('.carousel');
+let items = document.querySelectorAll('.carousel .item');
+let countItem = items.length;
+let active = 1;
+let other_1 = null;
+let other_2 = null;
+next.onclick = () => {
+    carousel.classList.remove('prev');
+    carousel.classList.add('next');
+    active =active + 1 >= countItem ? 0 : active + 1;
+    other_1 =active - 1 < 0 ? countItem -1 : active - 1;
+    other_2 = active + 1 >= countItem ? 0 : active + 1;
+    changeSlider();
+}
+prev.onclick = () => {
+    carousel.classList.remove('next');
+    carousel.classList.add('prev');
+    active = active - 1 < 0 ? countItem - 1 : active - 1;
+    other_1 = active + 1 >= countItem ? 0 : active + 1;
+    other_2 = other_1 + 1 >= countItem ? 0 : other_1 + 1;
+    changeSlider();
+}
+const changeSlider = () => {
+    let itemOldActive = document.querySelector('.carousel .item.active');
+    if(itemOldActive) itemOldActive.classList.remove('active');
+
+    let itemOldOther_1 = document.querySelector('.carousel .item.other_1');
+    if(itemOldOther_1) itemOldOther_1.classList.remove('other_1');
+
+    let itemOldOther_2 = document.querySelector('.carousel .item.other_2');
+    if(itemOldOther_2) itemOldOther_2.classList.remove('other_2');
+
+    items.forEach(e => {
+        e.querySelector('.image img').style.animation = 'none';
+        e.querySelector('.image figcaption').style.animation = 'none';
+        void e.offsetWidth;
+        e.querySelector('.image img').style.animation = '';
+        e.querySelector('.image figcaption').style.animation = '';
+    })
+
+    items[active].classList.add('active');
+    items[other_1].classList.add('other_1');
+    items[other_2].classList.add('other_2');
+
+    clearInterval(autoPlay);
+    autoPlay = setInterval(() => {
+        next.click();
+    }, 5000);
+}
+let autoPlay = setInterval(() => {
+    next.click();
+}, 5000); //carousel
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+            function getTimeFromElement(timerElement) {
+                let timeString = timerElement.textContent;
+                let timeParts = timeString.split(':').map(Number);
+                let hours = timeParts[0] || 0;
+                let minutes = timeParts[1] || 0;
+                let seconds = timeParts[2] || 0;
+                return (hours * 3600) + (minutes * 60) + seconds;
+            }
+
+            function updateTimer(seconds, timerElement) {
+                let hours = Math.floor(seconds / 3600);
+                let minutes = Math.floor((seconds % 3600) / 60);
+                let secs = seconds % 60;
+                if (seconds <= 0) {
+                    timerElement.textContent = ''; 
+                } else {
+                    timerElement.textContent = `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+                }
+            }
+
+            function startTimer(timerElement, duration, offerImg, offerAd, offerContent, offerAnimation) {
+                let time = duration;
+                updateTimer(time, timerElement);
+                let countdown = setInterval(function() {
+                    time--;
+                    updateTimer(time, timerElement);
+                    if (time <= 0) {
+                        clearInterval(countdown);
+                        offerImg.style.display = 'none';
+                        offerAd.style.display = 'block'; 
+                        offerContent.style.display = 'none';
+                        offerAnimation.style.display = 'none';
+                    }
+                }, 1000);
+            }
+
+            let cards = document.querySelectorAll('.card');
+            cards.forEach(function(card) {
+                let timerElement = card.querySelector('.timer');
+                let offerImg = card.querySelector('.offer-img');
+                let offerAnimation = card.querySelector('.offer-animation');
+                let offerContent = card.querySelector(".offer-content");
+                let offerAd = card.querySelector('.offerad'); 
+                let duration = getTimeFromElement(timerElement);
+                startTimer(timerElement, duration, offerImg, offerAd, offerContent, offerAnimation);
+            });
+        }); //offers
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+    let products = document.querySelectorAll('.popular-product');
+    let currentIndex = 0;
+    let totalProducts = products.length;
+
+    // Clone the first product and append it to the end
+    let firstClone = products[0].cloneNode(true);
+    firstClone.classList.add('clone');
+    document.querySelector('.popular-products').appendChild(firstClone);
+
+    function moveProducts() {
+        currentIndex++;
+        products.forEach((product, index) => {
+            product.style.transition = 'transform 0.5s ease-in-out';
+            product.style.transform = `translateX(-${currentIndex * 60}%)`;
+        });
+
+        if (currentIndex >= totalProducts) {
+            setTimeout(() => {
+                products.forEach((product) => {
+                    product.style.transition = 'none';
+                    product.style.transform = `translateX(0)`;
+                });
+                currentIndex = 0;
+            }, 500); // Timeout duration matches the CSS transition duration
+        }
+    }
+
+    setInterval(moveProducts, 2000); // Change 2000 to adjust the speed (2000ms = 2s)
+});
+
+    </script>
+</body>
+</html>
